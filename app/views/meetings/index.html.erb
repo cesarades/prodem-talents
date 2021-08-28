@@ -4,10 +4,9 @@
 
     <%= week_calendar(number_of_weeks: 1, events: @meetings) do |date, meetings| %>
       <%= date.day %>
-
       <% meetings.each do |meeting| %>
         <div>
-          <%= meeting.name %>
+          <%= meeting.agent %>
         </div>
       <% end %>
     <% end %>
