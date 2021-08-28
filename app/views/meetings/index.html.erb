@@ -10,7 +10,24 @@
         </div>
       <% end %>
     <% end %>
+  </div>
+</div>
 
-
+<div class="row justify-content-center my-3">
+  <div class="col-12 col-md-8 col-lg-6">
+    <div class="form p-3">
+      <h4>Schedule an appoitment</h4>
+      <%= simple_form_for @meeting do |f| %>
+        <div class="row">
+          <div class="col">
+            <%= f.input :start_time, as: :datetime, html5: true, required: true, autofocus: true, input_html: { value: Date.today } %>
+          </div>
+          <div class="col">
+            <%= f.input :agent, collection: ['Jorge Neira', 'Sebastian Caceres'], html5: true, required: true, autofocus: true, input_html: { value: Date.today } %>
+          </div>
+        </div>
+        <%= f.button :submit, class: 'btn btn-primary', value: 'Schedule now' %>
+      <% end %>
+    </div>
   </div>
 </div>
