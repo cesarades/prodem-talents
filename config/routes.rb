@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'about', to: 'pages#about', as: :about
   get 'contact', to: 'pages#contact', as: :contact
-  resources :meetings, only: %i[index create]
+  resources :meetings, only: %i[index show create]
 end
