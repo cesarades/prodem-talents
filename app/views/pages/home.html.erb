@@ -12,7 +12,11 @@
         <h3>For Athletes</h3>
         <h4>Meet your agent</h4>
         <p>One on one assistance to grow</p>
-        <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-flat" %>
+        <% if user_signed_in? %>
+          <%= link_to "Talk to an agent", schedule_path, class: "btn btn-flat" %>
+        <% else %>
+          <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-flat" %>
+        <% end %>
       </div>
       <div class="item">
         <h3>For Businesses</h3>
