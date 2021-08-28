@@ -1,19 +1,4 @@
-<div class="row justify-content-center m-0">
-  <div class="col-12 col-md-10 my-5">
-    <h1>Schedule an appoitment with one of our agents</h1>
-
-    <%= week_calendar(number_of_weeks: 1, events: @meetings) do |date, meetings| %>
-      <%= date.day %>
-      <% meetings.each do |meeting| %>
-        <div>
-          <%= meeting.agent %>
-        </div>
-      <% end %>
-    <% end %>
-  </div>
-</div>
-
-<div class="row justify-content-center my-3">
+<div class="row justify-content-center my-5">
   <div class="col-12 col-md-8 col-lg-6">
     <div class="form p-3">
       <h4>Schedule an appoitment</h4>
@@ -27,6 +12,22 @@
           </div>
         </div>
         <%= f.button :submit, class: 'btn btn-primary', value: 'Schedule now' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-center m-0">
+  <div class="col-12 col-md-10 my-5">
+    <div class="form p-3">
+      <h2>Available times</h2>
+      <%= week_calendar(number_of_weeks: 1, events: @meetings) do |date, meetings| %>
+        <% meetings.each do |meeting| %>
+          <div>
+            <strong><%= meeting.start_time.strftime("%l:%M%p")  %></strong>
+            <%= meeting.agent %>
+          </div>
+        <% end %>
       <% end %>
     </div>
   </div>
