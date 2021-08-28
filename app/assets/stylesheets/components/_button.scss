@@ -13,7 +13,7 @@
 }
 
 .btn-flat {
-  color: $blank;
+  color: $text;
   padding: 8px 24px;
   border-radius: 4px;
   background: $main;
@@ -22,7 +22,7 @@
 
 .btn-flat:hover {
   background: $hover_main;
-  color: $blank;
+  color: $text;
 }
 
 .btn-gradient {

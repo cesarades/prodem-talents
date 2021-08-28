@@ -2,19 +2,15 @@
   display: flex;
 }
 .flex > .item {
-  padding: 20px 10px;
+  padding: 55px 10px;
   text-align: center;
   color: $text;
   height: 300px;
   width: 80%;
   margin: 0px 10px;
   border-radius: 10px;
-  box-shadow: .5px .5px 5px lightgray;
-  background-color: $blank;
-  &:hover {
-    transition: .5s;
-    box-shadow: -2px 2px 5px $hover_text;
-  }
+  box-shadow: -2px 2px 5px $hover_text;
+  background-color: white;
 }
 
 .item h3 {
