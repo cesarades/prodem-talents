@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  h6 {
+    margin: 0px !important;
+  }
+  p {
+    margin: 0px !important;
+    font-size: 14px;
+  }
+  a {
+    padding: 0px 10px;
+    font-size: 24px;
+  }
+}
+
+.footer .footer-links {
+  display: flex;
+  place-items: center;
+  .contact {
+    padding-right: 20px;
+  }
+}
