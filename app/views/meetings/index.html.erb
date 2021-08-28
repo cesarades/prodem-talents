@@ -2,9 +2,16 @@
   <div class="col-12 col-md-10 my-5">
     <h1>Schedule an appoitment with one of our agents</h1>
 
-    <%= week_calendar(number_of_weeks: 1) do |date| %>
+    <%= week_calendar(number_of_weeks: 1, events: @meetings) do |date, meetings| %>
       <%= date.day %>
+
+      <% meetings.each do |meeting| %>
+        <div>
+          <%= meeting.name %>
+        </div>
+      <% end %>
     <% end %>
+
 
   </div>
 </div>
