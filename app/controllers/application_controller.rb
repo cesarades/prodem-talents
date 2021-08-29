@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!, except: %i[about new_contact]
+  before_action :authenticate_user!, except: %i[about]
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   def configure_permitted_parameters
