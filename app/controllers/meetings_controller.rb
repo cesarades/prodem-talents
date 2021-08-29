@@ -16,7 +16,7 @@ class MeetingsController < ApplicationController
     if @meeting.save
       redirect_to meeting_path(@meeting)
     else
-      render "meetings"
+      redirect_to meetings_path, alert: @meeting.errors.messages.values[0].join
     end
   end
 
