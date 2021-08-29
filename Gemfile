@@ -25,6 +25,9 @@ gem 'redis', '~> 4.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Mailer
+gem 'mail_form'
+
 # Calendar gem
 gem "simple_calendar", "~> 2.4"
 
