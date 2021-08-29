@@ -3,8 +3,9 @@
     <div class="container shadow my-5 w-50 rounded-lg">
       <div class="text-center p-5">
         <i class="far fa-check-circle" style="font-size:100px;color:#167FFB;padding-bottom:20px;"></i>
-        <h1>Booking Confirmed</h1>
-        <h4>You are shceduled for a meeting with <%= @meeting.agent %> at <strong><%= @meeting.start_time.strftime("%l:%M%p on %a %b %d") %></strong></h4>
+        <h1>Congratulations!</h1>
+        <h4>We look forward to meeting you. One of our qualified agents will contact you shortly.</h4>
+        <h5>You are shceduled for a meeting with <%= @meeting.agent %> at <strong><%= @meeting.start_time.strftime("%l:%M%p on %a %b %d") %></strong></h5>
         <%= link_to 'Home', root_path, class: 'btn btn-primary' %>
       </div>
     </div>
