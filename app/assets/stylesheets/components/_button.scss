@@ -13,16 +13,27 @@
 }
 
 .btn-flat {
-  color: $text;
+  color: black !important;
   padding: 8px 24px;
-  border-radius: 4px;
-  background: $main;
-  transition: background 0.3s ease;
+  border-radius: 5px;
+  background: white !important;
+  transition: 0.3s;
+  &:hover {
+    background: black !important;
+    color: white !important;
+  }
 }
 
-.btn-flat:hover {
-  background: $hover_main;
-  color: $text;
+.btn-flat-inverse {
+  color: white !important;
+  padding: 8px 24px;
+  border-radius: 5px;
+  background: black !important;
+  transition: 0.3s;
+  &:hover {
+    background: white !important;
+    color: black !important;
+  }
 }
 
 .btn-gradient {
@@ -31,7 +42,7 @@
   border-radius: 4px;
   font-weight: bold;
   background: linear-gradient(#167FFB, #0F60C4);
-  transition: background 0.3s ease;
+  transition: 0.3s;
   border: 1px solid #0F60C4;
 }
 
