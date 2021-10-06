@@ -1,10 +1,23 @@
 // Specific CSS for your home-page
-.background {
+body {
   background-color: white;
-  margin: 0px;
 }
 
-.heading {
+.row-home {
+  background-color: white;
+  margin: 0px;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+#row-cards {
+  background-color: $main;
+  border: 2px solid black;
+}
+
+.row-intro {
+  margin-top: 25px;
   background-color: white;
   align-items: center;
 

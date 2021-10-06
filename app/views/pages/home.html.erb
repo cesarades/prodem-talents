@@ -1,5 +1,5 @@
 <%= image_tag (image_path 'banner.jpeg'), id: 'banner' %>
-<div class="row heading">
+<div class="row row-intro">
   <div class="col-12 col-sm-4">
     <h1>WHAT IS TEMPO TALENTS?</h1>
   </div>
@@ -9,35 +9,41 @@
     </div>
   </div>
 </div>
-<div class="row p-5 background justify-content-center align-items-center">
-  <div class="col-12 col-lg-8">
-    <div class="flex">
-      <div class="item">
+<div class="row row-home" id="row-cards">
+  <div class="col-12 col-md-6">
+    <div class="card">
+      <div class="card-title">
         <h3>For Athletes</h3>
+      </div>
+      <div class="card-body">
         <h4>Meet your agent</h4>
         <p>One on one assistance to find what's best for you</p>
+      </div>
+      <div class="card-action">
         <% if user_signed_in? %>
           <%= link_to "Talk to an agent", meetings_path, class: "btn btn-primary" %>
         <% else %>
           <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
         <% end %>
       </div>
-      <div class="item">
+    </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <div class="card">
+      <div class="card-title">
         <h3>For Businesses</h3>
+      </div>
+      <div class="card-body">
         <h4>Find your representative</h4>
         <p>See how athletes can help your business</p>
+      </div>
+      <div class="card-action">
         <%= link_to "Contact Us", new_contact_path, class: "btn btn-primary" %>
       </div>
     </div>
   </div>
-  <div class="col-12 col-lg-3">
-    <div class="box">
-      <h2>Where Talent Meets Business</h2>
-      <p>We represent Northwestern athletes and help negotiate high quality sponsorships at their favorite local Evanston businesses.</p>
-    </div>
-  </div>
 </div>
-<div class="row p-5 background justify-content-center">
+<div class="row row-home">
   <div class="col-12 col-md-6 text-center">
     <h3>Learn our Philosophy</h3>
     <p>Why we're exited about what we do and where we're headed</p>
