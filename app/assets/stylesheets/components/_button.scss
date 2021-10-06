@@ -14,10 +14,11 @@
 
 .btn-flat {
   color: black !important;
-  padding: 8px 24px;
+  padding: 10px 30px !important;
   border-radius: 5px;
   background: white !important;
   transition: 0.3s;
+  border: 1px solid black;
   &:hover {
     background: black !important;
     color: white !important;
@@ -26,7 +27,7 @@
 
 .btn-flat-inverse {
   color: white !important;
-  padding: 8px 24px;
+  padding: 10px 30px !important;
   border-radius: 5px;
   background: black !important;
   transition: 0.3s;

@@ -1,23 +1,6 @@
 // Specific CSS for your home-page
-body {
-  background-color: white;
-}
-
-.row-home {
-  background-color: white;
-  margin: 0px;
-  padding: 32px;
-  justify-content: center;
-  align-items: center;
-}
-
-#row-cards {
-  background-color: $main;
-  border: 2px solid black;
-}
-
 .row-intro {
-  margin-top: 25px;
+  margin: 32px 0px;
   background-color: white;
   align-items: center;
 
@@ -32,4 +15,18 @@ body {
   img {
     width: 100%;
   }
+}
+
+.row-home {
+  background-color: white;
+  margin: 0px;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+#row-cards {
+  background-color: $main;
+  border: 2px solid black;
+  padding: 10%;
 }
