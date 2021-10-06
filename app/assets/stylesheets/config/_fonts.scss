@@ -6,6 +6,17 @@
 @font-face {
    font-family: 'Fungis';
    src: url('fungis_regular.ttf');
+   font-weight: normal;
+}
+@font-face {
+   font-family: 'Fungis';
+   src: url('fungis_heavy.ttf');
+   font-weight: bolder;
+}
+@font-face {
+   font-family: 'Fungis';
+   src: url('fungis_bold.ttf');
+   font-weight: bold;
 }
 
 // Define fonts for body and headers
