@@ -15,6 +15,7 @@
   h3 {
     padding: 0;
     margin: 12px 0px 6px 0px;
+    font-size: calc(.4 * (4.5vh + 3.3vw));
   }
 }
 
@@ -26,9 +27,10 @@
   h4 {
     margin-top: 10px;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: calc(.5 * (4.5vh + 3.3vw));
   }
   p {
+    font-size: calc(.3 * (4.5vh + 3.3vw));
     padding-right: 50px;
   }
 }

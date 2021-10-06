@@ -3,11 +3,10 @@
   margin: 32px 0px;
   background-color: white;
   align-items: center;
-
   h1 {
-    font-size: 80px;
+    font-size: calc(.9 * (4.5vh + 3.3vw));
     font-weight: bold;
-    padding-left: 10%;
+    padding-left: 5vw;
   }
   .image {
     width: auto;
@@ -20,7 +19,6 @@
 .row-home {
   background-color: white;
   margin: 0px;
-  padding: 32px;
   justify-content: center;
   align-items: center;
 }
@@ -29,4 +27,51 @@
   background-color: $main;
   border: 2px solid black;
   padding: 10%;
+}
+
+.learn-more {
+  border: 2px solid black;
+  display: flex;
+  margin-top: 20vh;
+  background-color: $main;
+  justify-content: space-between;
+}
+
+.learn-more .learn-more-rounded {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  width: 40vw;
+  height: 40vw;
+  min-width: 200px;
+  min-height: 200px;
+  border: 2px solid black;
+  position: relative;
+  top: 0px;
+  h2 {
+    margin: 20%;
+    font-size: calc(.5 * (4.5vh + 3.3vw));
+  }
+}
+
+.learn-more .learn-more-text {
+  flex-grow: 1;
+  background-color: $main;
+  text-align: right;
+  h2 {
+    margin: 10% 10% 3% 10%;
+    font-size: calc(.5 * (4.5vh + 3.3vw));
+  }
+  p {
+    margin-right: 10%;
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: calc(.3 * (4.5vh + 3.3vw));
+  }
+  a {
+    margin-right: 10%;
+  }
 }
